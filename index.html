@@ -164,13 +164,11 @@ a{color:var(--accent2);text-decoration:none}
   .nav-links{display:none}
 }
 
-.demo-disclaimer{position:relative;z-index:5;padding:8px 14px;background:#111827;border-bottom:1px solid rgba(148,163,184,.18);color:#94a3b8;text-align:center;font:500 11px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+.demo-disclaimer{display:block;max-width:min(720px,calc(100% - 32px));margin:14px auto 0;padding:10px 14px;background:rgba(15,23,42,.88);border:1px solid rgba(148,163,184,.22);border-radius:12px;color:#cbd5e1;text-align:center;font:500 11px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
 
 </style>
 </head>
 <body>
-<div class="demo-disclaimer" role="note">Disclaimer: All displayed data, names, messages, and metrics are fictional and shown for visual demonstration purposes only.</div>
-
 
 <!-- ── Navbar ──────────────────────────────────── -->
 <nav class="navbar">
@@ -196,6 +194,7 @@ a{color:var(--accent2);text-decoration:none}
   <div class="container">
     <h1>Automate Your Business with <span>AI-Powered Workflows</span></h1>
     <p>Intelligent chatbots, lead qualification, appointment booking, and workflow orchestration — all in one platform.</p>
+    <div class="demo-disclaimer" role="note">Disclaimer: All displayed data, names, messages, and metrics are fictional and shown for visual demonstration purposes only.</div>
     <div class="hero-buttons">
       <button class="btn-primary" onclick="document.getElementById('dashboard').scrollIntoView({behavior:'smooth'})">Explore Dashboard</button>
       <button class="btn-outline" onclick="document.getElementById('case-study').scrollIntoView({behavior:'smooth'})">See Results</button>
